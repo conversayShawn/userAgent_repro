@@ -11,12 +11,17 @@
     "cypress:cache:list": "cypress cache list",
     "list-videos": "ls -l cypress/videos",
     "check-videos": "ok-file 'cypress/videos/*.mp4'",
-    "set-status": "set-status"
+    "set-status": "set-status",
+    "cypress:run:mobile": "cypress run --env userAgent=mobile",
+    "cypress:run:desktop": "cypress run --env userAgent=desktop",
+    "cypress:open:mobile": "cypress open --env userAgent=mobile",
+    "cypress:open:desktop": "cypress open --env userAgent=desktop"
   },
   "keywords": [],
   "author": "Gleb Bahmutov <gleb@cypress.io>",
   "license": "ISC",
   "devDependencies": {
+    "cypress": "^5.2.0",
     "ok-file": "1.5.2"
   },
   "repository": {
