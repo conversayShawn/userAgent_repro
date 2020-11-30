@@ -3,19 +3,15 @@
   "version": "1.0.0",
   "description": "Small project for quickly testing Cypress.io test runner",
   "scripts": {
-    "cypress:run": "cypress run",
-    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --env userAgent=mobile",
+    "cypress:open": "cypress open --env userAgent=mobile",
     "cypress:verify": "cypress verify",
     "cypress:version": "cypress version",
     "cypress:info": "cypress info",
     "cypress:cache:list": "cypress cache list",
     "list-videos": "ls -l cypress/videos",
     "check-videos": "ok-file 'cypress/videos/*.mp4'",
-    "set-status": "set-status",
-    "cypress:run:mobile": "cypress run --env userAgent=mobile",
-    "cypress:run:desktop": "cypress run --env userAgent=desktop",
-    "cypress:open:mobile": "cypress open --env userAgent=mobile",
-    "cypress:open:desktop": "cypress open --env userAgent=desktop"
+    "set-status": "set-status"
   },
   "keywords": [],
   "author": "Gleb Bahmutov <gleb@cypress.io>",
